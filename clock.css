@@ -1,0 +1,63 @@
+body {
+  align-items: center;
+  background-image: url(/wallpapers/c8f7886085a609920c740fb470a867ad.jpg);
+  background-repeat: initial;
+}
+
+#clock {
+  border: solid;
+  background-color: #f3f174;
+  border-color: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.hand {
+  background-color: white;
+  width: 50%;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#sec {
+  background-color: black;
+}
+#min {
+  background-color: gray;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+.info {
+  background-color: rgba(255, 250, 250, 0.719);
+  border: solid gray;
+  margin-left: 0px;
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+  color: black;
+}
+#white {
+  color: white;
+  background-color: black;
+}
+#gray {
+  color: gray;
+  background-color: white;
+}
+#black {
+  color: black;
+  background-color: white;
+}
